@@ -1,0 +1,75 @@
+
+/* Podstawowe style */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.carousel-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.carousel-track img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Responsywność na telefonach */
+@media (max-width: 768px) {
+  .carousel-track img {
+    width: 100%;
+  }
+}
+
+/* Poprawki dla desktopa */
+@media (min-width: 1024px) {
+  .carousel-track {
+    justify-content: space-between;
+  }
+
+  #about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #about img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  #about p {
+    width: 60%;
+  }
+}
