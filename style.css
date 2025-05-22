@@ -1,0 +1,138 @@
+
+/* Reset i podstawowy styl */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #1C1C1C;
+}
+
+header.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Slider */
+.slider .slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.slider .slides img {
+  width: 100%;
+  max-width: 300px;
+  scroll-snap-align: center;
+  border-radius: 8px;
+}
+
+/* O firmie */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.about .text {
+  max-width: 600px;
+}
+
+/* Usługi */
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services ul li {
+  margin: 10px 0;
+}
+
+.toggle-lang button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #00B5E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Kontakt */
+.contact a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #00B5E2;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Opinie */
+.reviews form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.reviews input,
+.reviews select,
+.reviews textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.reviews button {
+  background-color: #00B5E2;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Pływający Messenger */
+.messenger-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00B5E2;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Obsługa wersji mobilnej */
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .slider .slides img {
+    max-width: 500px;
+  }
+}

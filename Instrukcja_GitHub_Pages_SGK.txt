@@ -1,0 +1,34 @@
+INSTRUKCJA – Jak wrzucić stronę SGK Cleaning Service na GitHub Pages
+
+1. Zaloguj się na swoje konto GitHub.
+2. Kliknij „New repository”.
+   - Nazwa np. sgk-cleaning
+   - Nie zaznaczaj README na start
+
+3. Kliknij 'Upload files'.
+   - Przeciągnij tam WSZYSTKIE pliki:
+     - index.html
+     - style.css
+     - script.js
+     - opinie.json
+     - favicon.ico
+     - grafiki: baner1.jpg, welkom1.jpg, welkom2.jpg, welkom3.jpg, sandraprofil.jpg
+
+4. Kliknij „Commit changes”.
+
+5. Wejdź w zakładkę 'Settings' (prawy górny róg repo).
+6. W menu po lewej kliknij 'Pages'.
+7. W sekcji 'Source' wybierz:
+   - Branch: main
+   - Folder: / (root)
+   - Kliknij 'Save'
+
+8. Po kilku sekundach dostaniesz link do strony:
+   - np. https://twojanazwa.github.io/sgk-cleaning/
+
+9. Gotowe! Możesz podać link Sandrze, wszystko działa online.
+
+Uwagi:
+- Upewnij się, że WSZYSTKIE pliki są w głównym katalogu (bez folderów)
+- GitHub Pages nie wspiera zapisu do plików, więc opinie zapisują się tylko lokalnie
+- Strona działa w pełni bez serwera przez 2–3 miesiące, jak planowano

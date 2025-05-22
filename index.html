@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGK Cleaning Service</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <!-- Sekcja 1: Banner główny -->
+  <header class="banner">
+    <img src="baner1.jpg" alt="SGK Cleaning Service Banner">
+  </header>
+
+  <!-- Sekcja 2: Welkom bij Cleaning Service SGK (slider) -->
+  <section class="slider">
+    <div class="slides">
+      <img src="welkom1.jpg" alt="Welkom 1">
+      <img src="welkom2.jpg" alt="Welkom 2">
+      <img src="welkom3.jpg" alt="Welkom 3">
+    </div>
+  </section>
+
+  <!-- Sekcja 3: O firmie -->
+  <section class="about">
+    <img src="sandraprofil.jpg" alt="Sandra SGK">
+    <div class="text">
+      <p class="lang nl">
+        Als u waarde hecht aan de kwaliteit van de geleverde diensten en u het zat bent om voortdurend te zoeken naar een professioneel schoonmaakbedrijf, dan bent u bij SGK Cleaning aan het juiste adres...
+      </p>
+      <p class="lang pl">
+        Jeśli cenisz sobie jakość świadczonych usług i masz dość ciągłego poszukiwania profesjonalnej firmy sprzątającej, to SGK Cleaning jest właściwym miejscem dla Ciebie...
+      </p>
+    </div>
+  </section>
+
+  <!-- Sekcja 4: Usługi -->
+  <section class="services">
+    <div class="toggle-lang">
+      <button onclick="setLang('pl')">PL</button>
+      <button onclick="setLang('nl')">NL</button>
+    </div>
+    <div class="lang pl">
+      <ul>
+        <li>Sprzątanie biur, osiedli, hal, siłowni, przychodni, domów...</li>
+      </ul>
+    </div>
+    <div class="lang nl">
+      <ul>
+        <li>Schoonmaak van kantoren, woonwijken, hallen, sportscholen, praktijken, huizen...</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sekcja 5: Obszar działania -->
+  <section class="area">
+    <p>Działamy na terenie prowincji Noord-Brabant – m.in. Breda, Etten-Leur, Roosendaal, Bergen op Zoom i okolice.</p>
+  </section>
+
+  <!-- Sekcja 6: Kontakt -->
+  <section class="contact">
+    <a href="https://www.facebook.com/share/1Ha2ZUCuKB/" target="_blank">Facebook</a>
+    <a href="https://m.me/sgk.cleaning.service" target="_blank">Messenger</a>
+    <a href="https://wa.me/31645406073" target="_blank">WhatsApp</a>
+  </section>
+
+  <!-- Sekcja 7: Opinie klientów -->
+  <section class="reviews">
+    <div id="opinie-list"></div>
+    <form id="opinie-form">
+      <input type="text" placeholder="Imię" required>
+      <input type="date" required>
+      <select required>
+        <option value="1">1 gwiazdka</option>
+        <option value="2">2 gwiazdki</option>
+        <option value="3">3 gwiazdki</option>
+        <option value="4">4 gwiazdki</option>
+        <option value="5">5 gwiazdek</option>
+      </select>
+      <textarea placeholder="Twoja opinia" required></textarea>
+      <button type="submit">Dodaj opinię</button>
+    </form>
+  </section>
+
+  <!-- Pływający przycisk Messengera -->
+  <a href="https://m.me/sgk.cleaning.service" class="messenger-btn" target="_blank">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
