@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #1C1C1C;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* hamburger fix */
+body.menu-open {
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sekcje i layout */
+.sekcja {
+  padding: 40px 15px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sekcja.biala {
+  background-color: #ffffff;
+}
+
+.sekcja.szara {
+  background-color: #F2F2F2;
+}
+
+.sekcja.blekitna {
+  background-color: #00B5E2;
+  color: white;
+}
+
+h2.naglowek {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.05rem;
+}
+
+/* Slider */
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  touch-action: pan-y;
+}
+
+.slides img {
+  width: 100vw;
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 250px;
+}
+
+/* Usługi */
+.uslugi-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.uslugi-wrapper img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.uslugi-wrapper ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.uslugi-wrapper li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+/* Opinie */
+.opinia {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.gwiazdki {
+  font-size: 1.3rem;
+  color: #f5a623;
+}
+
+/* Hamburger menu */
+#menu-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  z-index: 1001;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 75%;
+  max-width: 300px;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1C1C1C;
+  font-size: 1.1rem;
+}
+
+/* Sticky Messenger */
+.messenger-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0084FF;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1001;
+}
+
+/* RESPONSYWNOŚĆ NA MAŁE EKRANY */
+@media (max-width: 480px) {
+  .sekcja {
+    padding: 30px 10px;
+  }
+
+  h2.naglowek {
+    font-size: 1.5rem;
+  }
+
+  .uslugi-wrapper ul {
+    font-size: 1rem;
+  }
+
+  .slides img {
+    height: 200px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .messenger-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
