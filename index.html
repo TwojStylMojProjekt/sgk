@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SGK Cleaning Service</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+  <!-- Główny baner z logo -->
+  <header class="header">
+    <img src="baner1.jpg" alt="SGK Cleaning Service logo" class="logo">
+  </header>
+
+  <!-- Sekcja: Slider - Welkom bij Cleaning Service SGK -->
+  <section class="slider-section">
+    <h2>Welkom bij Cleaning Service SGK</h2>
+    <div class="slider">
+      <img src="welkom1.jpg" alt="Slider foto 1" class="slide">
+      <img src="welkom2.jpg" alt="Slider foto 2" class="slide">
+      <img src="welkom3.jpg" alt="Slider foto 3" class="slide">
+    </div>
+  </section>
+
+  <!-- Sekcja: O nas -->
+  <section class="about-section">
+    <h2>O nas / Over ons</h2>
+    <img src="sandraprofil.jpg" alt="Sandra - właścicielka SGK" class="profile-photo">
+    <p class="pl">
+      SGK Cleaning Service to firma specjalizująca się w sprzątaniu domów, biur i wydarzeń specjalnych.
+    </p>
+    <p class="nl">
+      SGK Cleaning Service is gespecialiseerd in het schoonmaken van woningen, kantoren en speciale evenementen.
+    </p>
+  </section>
+
+  <!-- Sekcja: Usługi -->
+  <section class="services-section">
+    <h2>Nasze usługi / Onze diensten</h2>
+    <ul class="pl">
+      <li>Sprzątanie biur</li>
+      <li>Sprzątanie domów</li>
+      <li>Sprzątanie po imprezach</li>
+      <li>Odkurzanie</li>
+      <li>Mycie podłóg</li>
+      <li>Łazienki</li>
+      <li>Okna</li>
+    </ul>
+    <ul class="nl">
+      <li>Kantoorschoonmaak</li>
+      <li>Woningenschoonmaak</li>
+      <li>Schoonmaak na evenementen</li>
+      <li>Stofzuigen</li>
+      <li>Dweilen</li>
+      <li>Badkamers</li>
+      <li>Ramen</li>
+    </ul>
+  </section>
+
+  <!-- Sekcja: Obszar działania -->
+  <section class="area-section">
+    <h2>Obszar działania</h2>
+    <p>Działamy na terenie prowincji Noord-Brabant – m.in. Breda, Etten-Leur, Roosendaal, Bergen op Zoom i okolice.</p>
+  </section>
+
+  <!-- Sekcja: Kontakt -->
+  <section class="contact-section">
+    <h2>Kontakt</h2>
+    <div class="contact-links">
+      <a href="https://www.facebook.com/share/1Ha2ZUCuKB/" target="_blank">Facebook</a>
+      <a href="https://m.me/sgk.cleaning.service" target="_blank">Messenger</a>
+      <a href="https://wa.me/31645406073" target="_blank">WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Sekcja: Opinie -->
+  <section class="reviews-section">
+    <h2>Opinie klientów / Klantenbeoordelingen</h2>
+    <div id="opinie-list"></div>
+    <form id="opinie-form">
+      <input type="text" placeholder="Imię" required />
+      <input type="date" required />
+      <select required>
+        <option value="1">1 gwiazdka</option>
+        <option value="2">2 gwiazdki</option>
+        <option value="3">3 gwiazdki</option>
+        <option value="4">4 gwiazdki</option>
+        <option value="5">5 gwiazdek</option>
+      </select>
+      <textarea placeholder="Twoja opinia" required></textarea>
+      <button type="submit">Dodaj opinię</button>
+    </form>
+  </section>
+
+  <!-- Pływający Messenger -->
+  <a href="https://m.me/sgk.cleaning.service" class="messenger-float" target="_blank">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
