@@ -1,0 +1,125 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #F2F2F2;
+  color: #1C1C1C;
+}
+
+header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+}
+
+.slider-section,
+.about-section,
+.services-section,
+.area-section,
+.contact-section,
+.reviews-section {
+  padding: 20px;
+  background-color: #FFFFFF;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+  font-size: 20px;
+  color: #00B5E2;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.slide {
+  min-width: 90%;
+  border-radius: 10px;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.services-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.services-section li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 15px;
+  background-color: #00B5E2;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  background-color: #008db6;
+}
+
+#opinie-list {
+  margin-bottom: 20px;
+}
+
+#opinie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#opinie-form input,
+#opinie-form select,
+#opinie-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#opinie-form button {
+  padding: 10px;
+  background-color: #00B5E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.messenger-float {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #00B5E2;
+  color: white;
+  padding: 12px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
