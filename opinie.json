@@ -1,20 +1,20 @@
 [
   {
-    "name": "Klaudia",
-    "date": "2024-11-20",
-    "rating": 5,
-    "message": "Usługa na najwyższym poziomie. Polecam z całego serca!"
+    "imie": "Anna",
+    "data": "2025-05-20",
+    "ocena": 5,
+    "tresc": "Świetna jakość usług, wszystko posprzątane na błysk!"
   },
   {
-    "name": "Bas",
-    "date": "2024-12-05",
-    "rating": 4,
-    "message": "Bardzo dokładnie i profesjonalnie. Na pewno wrócę."
+    "imie": "Jan",
+    "data": "2025-05-18",
+    "ocena": 4,
+    "tresc": "Bardzo profesjonalna obsługa, chociaż trochę drogo."
   },
   {
-    "name": "Anna",
-    "date": "2025-01-10",
-    "rating": 5,
-    "message": "Sandra to mistrzyni porządku! Dziękujemy."
+    "imie": "Marieke",
+    "data": "2025-05-15",
+    "ocena": 5,
+    "tresc": "Uitstekende schoonmaakservice, zeer tevreden!"
   }
 ]
