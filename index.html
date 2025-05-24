@@ -1,30 +1,38 @@
 <!DOCTYPE html><html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>SGK Cleaning Service</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
   <script defer src="script.js"></script>
+  <script defer src="menu.js"></script>
 </head>
 <body>
-  <!-- Przełącznik językowy -->
-  <div id="language-switcher">
+  <!-- Hamburger menu -->
+  <button id="menu-toggle">☰</button>
+  <nav>
+    <a href="#welcome">Start</a>
+    <a href="#about">O nas</a>
+    <a href="#services">Usługi</a>
+    <a href="#area">Obszar</a>
+    <a href="#contact">Kontakt</a>
+    <a href="#reviews">Opinie</a>
+  </nav>  <!-- Przełącznik językowy -->  <div id="language-switcher">
     <img src="flag-nl.png" alt="NL" data-lang="nl" />
     <img src="flag-en.png" alt="EN" data-lang="en" />
     <img src="flag-pl.png" alt="PL" data-lang="pl" />
   </div>  <div class="container">
     <header>
       <img src="baner1.jpg" alt="Logo SGK" class="logo" />
-    </header><section class="card">
+    </header><section class="card" id="welcome">
   <h2 data-lang="pl">Witamy w SGK Cleaning Service</h2>
   <h2 data-lang="nl" style="display: none;">Welkom bij SGK Cleaning Service</h2>
   <h2 data-lang="en" style="display: none;">Welcome to SGK Cleaning Service</h2>
   <img src="welkom1.jpg" alt="Zdjęcie powitalne" class="hero" />
 </section>
 
-<section class="card">
+<section class="card" id="about">
   <h2 data-lang="pl">O nas</h2>
   <h2 data-lang="nl" style="display: none;">Over ons</h2>
   <h2 data-lang="en" style="display: none;">About us</h2>
@@ -34,7 +42,7 @@
   <p data-lang="en" style="display: none;">SGK Cleaning Service specializes in cleaning homes, offices, and special events.</p>
 </section>
 
-<section class="card">
+<section class="card" id="services">
   <h2 data-lang="pl">Nasze usługi</h2>
   <h2 data-lang="nl" style="display: none;">Onze diensten</h2>
   <h2 data-lang="en" style="display: none;">Our Services</h2>
@@ -67,7 +75,7 @@
   </ul>
 </section>
 
-<section class="card">
+<section class="card" id="area">
   <h2 data-lang="pl">Obszar działania</h2>
   <h2 data-lang="nl" style="display: none;">Werkgebied</h2>
   <h2 data-lang="en" style="display: none;">Service Area</h2>
@@ -76,7 +84,7 @@
   <p data-lang="en" style="display: none;">We operate in the Noord-Brabant region – including Breda, Etten-Leur, Roosendaal, Bergen op Zoom and surrounding areas.</p>
 </section>
 
-<section class="card">
+<section class="card" id="contact">
   <h2 data-lang="pl">Kontakt</h2>
   <h2 data-lang="nl" style="display: none;">Contact</h2>
   <h2 data-lang="en" style="display: none;">Contact</h2>
@@ -93,7 +101,7 @@
   </div>
 </section>
 
-<section class="card">
+<section class="card" id="reviews">
   <h2 data-lang="pl">Opinie klientów</h2>
   <h2 data-lang="nl" style="display: none;">Klantenbeoordelingen</h2>
   <h2 data-lang="en" style="display: none;">Customer Reviews</h2>
