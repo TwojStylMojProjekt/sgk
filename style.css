@@ -1,0 +1,156 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #1C1C1C;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+h2 {
+  color: #00B5E2;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto 5px auto;
+  border-radius: 12px;
+}
+
+.profile {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.contact-buttons a {
+  background: #00B5E2;
+  border-radius: 12px;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-buttons img {
+  width: 30px;
+  height: 30px;
+}
+
+.opinions {
+  margin: 20px 0;
+}
+
+.opinion {
+  background: #F2F2F2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.opinion .stars {
+  font-size: 1.2rem;
+  color: gold;
+}
+
+.opinion-form input,
+.opinion-form textarea,
+.opinion-form select,
+.opinion-form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.opinion-form button {
+  background: #00B5E2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.opinion-form button:hover {
+  background: #008BBF;
+}
+
+.floating-messenger {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-size: 24px;
+  background-color: #00B5E2;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 1000;
+}
