@@ -1,138 +1,32 @@
-/* Ogólne */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f4ef;
-  color: #000;
-}
+/* ===== SGK Cleaning Service – styl mobilny ===== */
 
-/* Kontener */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-}
+body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; background: url('tlo.jpg') no-repeat center center fixed; background-size: cover; background-color: #f5f3ef; color: #000; }
 
-/* Baner górny */
-.banner img {
-  width: 100%;
-  display: block;
-  border-radius: 16px;
-  margin-bottom: 1.5rem;
-}
+.wrapper { max-width: 540px; margin: 0 auto; padding: 1rem; }
 
-/* Logo powitalne */
-.logo-overlay {
-  width: 90%;
-  max-width: 500px;
-  display: block;
-  margin: 0 auto 2rem auto;
-}
+.hero { position: relative; text-align: center; }
 
-/* Karty = chmurki */
-.card {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
+.hero-img { width: 100%; border-radius: 20px; display: block; }
 
-/* Dwa boksy obok siebie */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+.hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #5c1a12; text-shadow: 0 1px 3px rgba(0,0,0,0.3); font-size: 1.6rem; font-weight: bold; text-align: center; }
 
-.grid .card {
-  flex: 1 1 48%;
-}
+.hero-text p { margin: 0; font-size: 1.1rem; font-weight: normal; }
 
-/* Profil i kontakt – obrazek okrągły */
-.round-img {
-  width: 100%;
-  max-width: 220px;
-  border-radius: 50%;
-  display: block;
-  margin: 1rem auto;
-}
+.card { background-color: rgba(255, 255, 255, 0.95); border-radius: 16px; padding: 1.2rem; margin: 1.2rem 0; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); }
 
-/* Centrum tekstu */
-.center-text {
-  text-align: center;
-}
+h2 { font-size: 1.2rem; color: #0F3C5A; margin-bottom: 0.6rem; }
 
-/* Ikonki społecznościowe */
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
+ul { padding-left: 1.2rem; margin: 0; }
 
-.socials a {
-  background-color: #0F3C5A;
-  color: white;
-  text-decoration: none;
-  padding: 10px 16px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
+.contact-icons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
 
-.socials a:hover {
-  background-color: #5C1A12;
-}
+.contact-icons img { width: 48px; height: 48px; }
 
-/* Opinie */
-.opinions {
-  margin-bottom: 1rem;
-}
+/* Opinie */ #opinie-form input, #opinie-form select, #opinie-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: 1px solid #ccc; }
 
-.opinion-form input,
-.opinion-form select,
-.opinion-form textarea {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
+#opinie-form button { background-color: #5c1a12; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; transition: background-color 0.3s; }
 
-.opinion-form button {
-  background-color: #5C1A12;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
+#opinie-form button:hover { background-color: #0F3C5A; }
 
-.opinion-form button:hover {
-  background-color: #0F3C5A;
-}
+/* Responsywność */ @media screen and (max-width: 480px) { .hero-text { font-size: 1.2rem; } .hero-text p { font-size: 1rem; } }
 
-/* Responsywność */
-@media (max-width: 768px) {
-  .grid {
-    flex-direction: column;
-  }
-
-  .grid .card {
-    flex: 1 1 100%;
-  }
-
-  .logo-overlay {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .round-img {
-    max-width: 140px;
-  }
-}
