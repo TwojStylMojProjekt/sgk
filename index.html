@@ -1,79 +1,80 @@
-<!DOCTYPE html><html lang="nl">
+<!DOCTYPE html>
+<html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SGK Cleaning Service</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
-  <script defer src="script.js"></script>
 </head>
 <body>
+
   <div class="container">
-    <header>
-      <img src="baner1.jpg" alt="Logo SGK" class="logo" />
-    </header><section class="card">
-  <h2>Welkom bij SGK Cleaning Service</h2>
-  <img src="welkom1.jpg" alt="Welkom afbeelding" class="hero" />
-</section>
 
-<section class="card">
-  <h2>Over ons</h2>
-  <img src="sandraprofil.jpg" alt="Sandra – eigenaar van het bedrijf" class="profile" />
-  <p>SGK Cleaning Service is gespecialiseerd in het schoonmaken van huizen, kantoren en speciale evenementen.</p>
-</section>
+    <header class="card">
+      <h1>SGK Cleaning Service</h1>
+      <img src="welkom1.jpg" alt="Sandra aan het werk" class="hero" />
+    </header>
 
-<section class="card">
-  <h2>Onze diensten</h2>
-  <ul>
-    <li>Huizen schoonmaken</li>
-    <li>Kantoren schoonmaken</li>
-    <li>Schoonmaken na feesten</li>
-    <li>Lange termijn schoonmaak</li>
-    <li>Vloeren dweilen</li>
-    <li>Schoonmaken na renovatie</li>
-    <li>Ramen wassen</li>
-  </ul>
-</section>
+    <section class="card">
+      <h2>Welkom bij SGK</h2>
+      <p>Professionele schoonmaakdiensten in Noord-Brabant</p>
+    </section>
 
-<section class="card">
-  <h2>Werkgebied</h2>
-  <p>Wij werken in de provincie Noord-Brabant – waaronder Breda, Etten-Leur, Roosendaal, Bergen op Zoom en omgeving.</p>
-</section>
+    <section class="row">
+      <div class="card half">
+        <h2>Over ons</h2>
+        <img src="sandraprofil.jpg" alt="Sandra – eigenaar" class="profile" />
+        <p>Wij zijn toegewijd, ervaren en betrouwbaar. Onze passie is een frisse, schone leef- of werkomgeving voor onze klanten.</p>
+      </div>
 
-<section class="card">
-  <h2>Contact</h2>
-  <div class="contact-buttons">
-    <a href="https://www.facebook.com/share/1Ha2ZUCuKB/" target="_blank">
-      <img src="facebook.png" alt="Facebook" />
-    </a>
-    <a href="https://m.me/sgk.cleaning.service" target="_blank">
-      <img src="messenger.png" alt="Messenger" />
-    </a>
-    <a href="https://wa.me/31645406073" target="_blank">
-      <img src="whatsapp.png" alt="WhatsApp" />
-    </a>
+      <div class="card half">
+        <h2>Onze diensten</h2>
+        <ul>
+          <li>Huizen schoonmaken</li>
+          <li>Kantoren schoonmaken</li>
+          <li>Na-feest schoonmaak</li>
+          <li>Langdurige samenwerking</li>
+          <li>Vloeren dweilen</li>
+          <li>Na renovatie</li>
+          <li>Ramen wassen</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Werkgebied</h2>
+      <p>Wij werken in de provincie Noord-Brabant – inclusief Breda, Etten-Leur, Roosendaal, Bergen op Zoom en omgeving.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <div class="contact-buttons">
+        <a href="https://wa.me/31645406073" target="_blank">WhatsApp</a>
+        <a href="https://m.me/sgk.cleaning.service" target="_blank">Messenger</a>
+        <a href="mailto:sgk.cleaning.service@gmail.com">E-mail</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Beoordelingen van klanten</h2>
+      <div id="opinie-list" class="opinions"></div>
+      <form id="opinie-form" class="opinion-form">
+        <input type="text" placeholder="Naam" required />
+        <input type="date" required />
+        <select required>
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★</option>
+          <option value="3">★★★</option>
+          <option value="2">★★</option>
+          <option value="1">★</option>
+        </select>
+        <textarea placeholder="Uw mening..." required></textarea>
+        <button type="submit">Verzenden</button>
+      </form>
+    </section>
+
   </div>
-</section>
-
-<section class="card">
-  <h2>Klantenbeoordelingen</h2>
-  <div id="opinie-list" class="opinions"></div>
-  <form id="opinie-form" class="opinion-form">
-    <input type="text" placeholder="Naam" required />
-    <input type="date" required />
-    <select required>
-      <option value="5">★★★★★</option>
-      <option value="4">★★★★</option>
-      <option value="3">★★★</option>
-      <option value="2">★★</option>
-      <option value="1">★</option>
-    </select>
-    <textarea placeholder="Uw beoordeling" required></textarea>
-    <button type="submit">Beoordeling toevoegen</button>
-  </form>
-</section>
-
-  </div><a href="https://m.me/sgk.cleaning.service" class="floating-messenger" title="Messenger">💬</a>
 
 </body>
 </html>
