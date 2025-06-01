@@ -1,173 +1,49 @@
-/* Dodane style dla przełącznika języka */
-#language-switcher {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 1000;
-  display: flex;
-  gap: 10px;
-}
-
-#language-switcher img {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  transition: 0.2s;
-}
-
-#language-switcher img:hover {
-  border-color: #00B5E2;
-}
-
-/* Pozostałe style strony */
-* {
-  box-sizing: border-box;
-}
-
 body {
+  background: url('tlo.jpg') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #e0f7fb;
-  color: #1C1C1C;
 }
 
-.container {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 15px;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 10px;
-  padding: 0;
-}
-
-.logo {
-  width: auto;
-  max-height: 120px;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
+/* Karty z białym tłem przypominające chmurki */
 .card {
-  background: #ffffff;
-  padding: 20px 15px;
-  margin-bottom: 20px;
-  border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  transition: all 0.3s ease;
 }
 
-h2 {
-  color: #00B5E2;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+.card:hover {
+  transform: scale(1.01);
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0 auto;
-  max-width: 90%;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul li {
-  padding: 5px 0;
-}
-
-.hero, .profile {
-  width: 100%;
-  max-width: 220px;
-  height: auto;
-  display: block;
-  margin: 0 auto 15px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-.contact-buttons a {
-  background: #00B5E2;
-  border-radius: 12px;
-  padding: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* Przyciski kontaktowe */
 .contact-buttons img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  margin: 0 10px;
 }
 
-.opinions {
-  margin: 20px 0;
-}
-
-.opinion {
-  background: #F2F2F2;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-
-.opinion .stars {
-  font-size: 1.2rem;
-  color: gold;
-}
-
+/* Formularz opinii */
 .opinion-form input,
 .opinion-form textarea,
-.opinion-form select,
-.opinion-form button {
-  display: block;
+.opinion-form select {
   width: 100%;
-  margin: 10px 0;
   padding: 10px;
-  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .opinion-form button {
-  background: #00B5E2;
+  background-color: #1C6EA4;
   color: white;
-  font-weight: bold;
-  cursor: pointer;
   border: none;
-}
-
-.opinion-form button:hover {
-  background: #008BBF;
-}
-
-.floating-messenger {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  font-size: 24px;
-  background-color: #00B5E2;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  text-decoration: none;
-  z-index: 1000;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
