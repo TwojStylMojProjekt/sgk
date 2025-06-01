@@ -22,7 +22,7 @@ ul { padding-left: 1.2rem; margin: 0; }
 
 .contact-icons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
 
-.contact-icons img { width: 48px; height: 48px; }
+.contact-icons img { background: none; border: none; box-shadow: none; border-radius: 0; width: 60px; height: 60px; object-fit: contain; }
 
 /* Opinie */ #opinie-form input, #opinie-form select, #opinie-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: 1px solid #ccc; }
 
