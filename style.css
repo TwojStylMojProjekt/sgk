@@ -14,7 +14,7 @@ body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; background: url(
 
 .hero-content p { font-size: 1.2rem; margin-top: 0.4rem; color: #0F3C5A; }
 
-.card { background-color: rgba(255, 255, 255, 0.6); /* przezroczysta biel */ border-radius: 16px; padding: 1.2rem; margin: 1.2rem 0; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); color: black; }
+.card { background-color: rgba(255, 255, 255, 0.6); /* przezroczysta biel */ border-radius: 16px; padding: 1.2rem; margin: 1.2rem 0; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); color: black; text-align: center; }
 
 h2 { font-size: 1.2rem; color: #48140E; font-weight: bold; margin-bottom: 0.6rem; }
 
@@ -30,7 +30,5 @@ ul { padding-left: 1.2rem; margin: 0; }
 
 #opinie-form button:hover { background-color: #0F3C5A; }
 
-/* Responsywność */ @media screen and (max-width: 480px) { .hero-content h1 { font-size: 1.6rem; }
-
-.hero-content p { font-size: 1rem; } }
+/* Responsywność */ @media screen and (max-width: 480px) { .hero-content h1 { font-size: 1.6rem; } .hero-content p { font-size: 1rem; } }
 
