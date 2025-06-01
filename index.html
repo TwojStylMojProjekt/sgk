@@ -1,80 +1,71 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!DOCTYPE html><html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SGK Cleaning Service</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
+  <div class="container"><header class="banner">
+  <img src="baner.jpg" alt="Sandra met stofzuiger" />
+</header>
 
-  <div class="container">
+<section class="card center-text">
+  <h1>Welkom bij SGK<br>Cleaning Service</h1>
+</section>
 
-    <header class="card">
-      <h1>SGK Cleaning Service</h1>
-      <img src="welkom1.jpg" alt="Sandra aan het werk" class="hero" />
-    </header>
+<section class="grid">
+  <div class="card">
+    <h2>Over ons</h2>
+    <img src="profile.jpg" alt="Sandra – eigenaar" class="round-img" />
+    <p>SGK Cleaning Service is gespecialiseerd in het schoonmaken van huizen, kantoren en speciale evenementen.</p>
+  </div>
+  <div class="card">
+    <h2>Onze diensten</h2>
+    <ul>
+      <li>Huizen schoonmaken</li>
+      <li>Kantoren schoonmaken</li>
+      <li>Schoonmaken na feesten</li>
+      <li>Lange termijn schoonmaak</li>
+      <li>Vloeren dweilen</li>
+      <li>Schoonmaken na renovatie</li>
+      <li>Ramen wassen</li>
+    </ul>
+  </div>
+</section>
 
-    <section class="card">
-      <h2>Welkom bij SGK</h2>
-      <p>Professionele schoonmaakdiensten in Noord-Brabant</p>
-    </section>
+<section class="card">
+  <h2>Werkgebied</h2>
+  <div class="socials">
+    <a href="https://www.facebook.com/share/1Ha2ZUCuKB/" target="_blank">Facebook</a>
+    <a href="https://m.me/sgk.cleaning.service" target="_blank">Messenger</a>
+    <a href="https://wa.me/31645406073" target="_blank">WhatsApp</a>
+  </div>
+</section>
 
-    <section class="row">
-      <div class="card half">
-        <h2>Over ons</h2>
-        <img src="sandraprofil.jpg" alt="Sandra – eigenaar" class="profile" />
-        <p>Wij zijn toegewijd, ervaren en betrouwbaar. Onze passie is een frisse, schone leef- of werkomgeving voor onze klanten.</p>
-      </div>
+<section class="card">
+  <h2>Contact</h2>
+  <img src="contact.jpg" alt="Contact met SGK" class="round-img" />
+</section>
 
-      <div class="card half">
-        <h2>Onze diensten</h2>
-        <ul>
-          <li>Huizen schoonmaken</li>
-          <li>Kantoren schoonmaken</li>
-          <li>Na-feest schoonmaak</li>
-          <li>Langdurige samenwerking</li>
-          <li>Vloeren dweilen</li>
-          <li>Na renovatie</li>
-          <li>Ramen wassen</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Werkgebied</h2>
-      <p>Wij werken in de provincie Noord-Brabant – inclusief Breda, Etten-Leur, Roosendaal, Bergen op Zoom en omgeving.</p>
-    </section>
-
-    <section class="card">
-      <h2>Contact</h2>
-      <div class="contact-buttons">
-        <a href="https://wa.me/31645406073" target="_blank">WhatsApp</a>
-        <a href="https://m.me/sgk.cleaning.service" target="_blank">Messenger</a>
-        <a href="mailto:sgk.cleaning.service@gmail.com">E-mail</a>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Beoordelingen van klanten</h2>
-      <div id="opinie-list" class="opinions"></div>
-      <form id="opinie-form" class="opinion-form">
-        <input type="text" placeholder="Naam" required />
-        <input type="date" required />
-        <select required>
-          <option value="5">★★★★★</option>
-          <option value="4">★★★★</option>
-          <option value="3">★★★</option>
-          <option value="2">★★</option>
-          <option value="1">★</option>
-        </select>
-        <textarea placeholder="Uw mening..." required></textarea>
-        <button type="submit">Verzenden</button>
-      </form>
-    </section>
+<section class="card">
+  <h2>Klantenbeoordelingen</h2>
+  <div id="opinie-list" class="opinions"></div>
+  <form id="opinie-form" class="opinion-form">
+    <input type="text" placeholder="Naam" required />
+    <input type="date" required />
+    <select required>
+      <option value="5">★★★★★</option>
+      <option value="4">★★★★</option>
+      <option value="3">★★★</option>
+      <option value="2">★★</option>
+      <option value="1">★</option>
+    </select>
+    <textarea placeholder="Uw beoordeling..." required></textarea>
+    <button type="submit">Versturen</button>
+  </form>
+</section>
 
   </div>
-
 </body>
 </html>
