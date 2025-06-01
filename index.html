@@ -1,55 +1,66 @@
 <!DOCTYPE html><html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>SGK Cleaning Service</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="container"><header class="banner">
-  <img src="baner1.jpg" alt="Sandra met stofzuiger" />
-  <img src="welkom-logo.png" alt="Welkom bij SGK Cleaning Service" class="logo-overlay" />
-</header>
-
-<section class="grid">
-  <div class="card">
-    <h2>Over ons</h2>
-    <img src="profile.jpg" alt="Sandra – eigenaar" class="round-img" />
-    <p>SGK Cleaning Service is gespecialiseerd in het schoonmaken van huizen, kantoren en speciale evenementen.</p>
-  </div>
-  <div class="card">
-    <h2>Onze diensten</h2>
-    <ul>
-      <li>Huizen schoonmaken</li>
-      <li>Kantoren schoonmaken</li>
-      <li>Schoonmaken na feesten</li>
-      <li>Lange termijn schoonmaak</li>
-      <li>Vloeren dweilen</li>
-      <li>Schoonmaken na renovatie</li>
-      <li>Ramen wassen</li>
-    </ul>
+  <div class="container">
+    <header>
+      <img src="baner1.jpg" alt="Logo SGK" class="logo" />
+    </header><section class="card center-text">
+  <div class="text-logo">
+    SGK<br>
+    <span>Cleaning Service</span>
   </div>
 </section>
 
 <section class="card">
-  <h2>Werkgebied</h2>
-  <div class="socials">
-    <a href="https://www.facebook.com/share/1Ha2ZUCuKB/" target="_blank">Facebook</a>
-    <a href="https://m.me/sgk.cleaning.service" target="_blank">Messenger</a>
-    <a href="https://wa.me/31645406073" target="_blank">WhatsApp</a>
+  <h2 data-lang="nl">Over ons</h2>
+  <p data-lang="nl">SGK Cleaning Service is gespecialiseerd in het schoonmaken van huizen, kantoren en speciale evenementen.</p>
+</section>
+
+<section class="card">
+  <h2 data-lang="nl">Onze diensten</h2>
+  <ul data-lang="nl">
+    <li>Huizen schoonmaken</li>
+    <li>Kantoren schoonmaken</li>
+    <li>Schoonmaken na feesten</li>
+    <li>Lange termijn schoonmaak</li>
+    <li>Vloeren dweilen</li>
+    <li>Schoonmaken na renovatie</li>
+    <li>Ramen wassen</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2 data-lang="nl">Werkgebied</h2>
+  <p data-lang="nl">Wij werken in de provincie Noord-Brabant – waaronder Breda, Etten-Leur, Roosendaal, Bergen op Zoom en omgeving.</p>
+</section>
+
+<section class="card">
+  <h2 data-lang="nl">Contact</h2>
+  <div class="contact-buttons">
+    <a href="https://www.facebook.com/share/1Ha2ZUCuKB/" target="_blank">
+      <img src="facebook.png" alt="Facebook" />
+    </a>
+    <a href="https://m.me/sgk.cleaning.service" target="_blank">
+      <img src="messenger.png" alt="Messenger" />
+    </a>
+    <a href="https://wa.me/31645406073" target="_blank">
+      <img src="whatsapp.png" alt="WhatsApp" />
+    </a>
   </div>
 </section>
 
 <section class="card">
-  <h2>Contact</h2>
-  <img src="contact.jpg" alt="Contact met SGK" class="round-img" />
-</section>
-
-<section class="card">
-  <h2>Klantenbeoordelingen</h2>
+  <h2 data-lang="nl">Klantenbeoordelingen</h2>
   <div id="opinie-list" class="opinions"></div>
   <form id="opinie-form" class="opinion-form">
-    <input type="text" placeholder="Naam" required />
+    <input type="text" placeholder="Imię" required />
     <input type="date" required />
     <select required>
       <option value="5">★★★★★</option>
@@ -58,11 +69,12 @@
       <option value="2">★★</option>
       <option value="1">★</option>
     </select>
-    <textarea placeholder="Uw beoordeling..." required></textarea>
-    <button type="submit">Versturen</button>
+    <textarea placeholder="Twoja opinia" required></textarea>
+    <button type="submit">Dodaj opinię</button>
   </form>
 </section>
 
   </div>
+  <a href="https://m.me/sgk.cleaning.service" class="floating-messenger" title="Messenger">💬</a>
 </body>
 </html>
