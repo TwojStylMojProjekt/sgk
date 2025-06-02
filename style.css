@@ -99,6 +99,18 @@ ul {
   display: block;
 }
 
+/* Zdjęcie Sandry – kontakt */
+.kontakt-foto {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Opinie – teraz jak karta */
 #opinie-list {
   margin-bottom: 1rem;
