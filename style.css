@@ -99,7 +99,7 @@ ul {
   display: block;
 }
 
-/* Opinie */
+/* Opinie – wersja ulepszona */
 #opinie-list {
   margin-bottom: 1rem;
   display: flex;
@@ -108,20 +108,43 @@ ul {
 }
 
 .opinion {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 1.2rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
   font-size: 0.95rem;
   color: #333;
   line-height: 1.5;
 }
 
-.opinion strong {
+.opinion img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.opinion-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.opinion-content strong {
+  font-size: 1rem;
   color: #0F3C5A;
 }
 
+.opinion-content .stars {
+  color: #FFD700;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Formularz opinii */
 #opinie-form {
   text-align: center;
 }
