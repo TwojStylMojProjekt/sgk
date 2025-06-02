@@ -99,7 +99,7 @@ ul {
   display: block;
 }
 
-/* Opinie – wersja ulepszona */
+/* Opinie – teraz jak karta */
 #opinie-list {
   margin-bottom: 1rem;
   display: flex;
@@ -108,29 +108,14 @@ ul {
 }
 
 .opinion {
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 1rem 1.2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1.2rem;
   border-radius: 16px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   font-size: 0.95rem;
   color: #333;
   line-height: 1.5;
-}
-
-.opinion img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.opinion-content {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .opinion-content strong {
