@@ -1,157 +1,42 @@
 /* ===== SGK Cleaning Service – styl mobilny ===== */
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: url('tlo.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-color: #f5f3ef;
-  color: #000;
-}
+body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; background: url('tlo.jpg') no-repeat center center fixed; background-size: cover; background-color: #f5f3ef; color: #000; }
 
-.wrapper {
-  max-width: 540px;
-  margin: 0 auto;
-  padding: 1rem;
-}
+.wrapper { max-width: 540px; margin: 0 auto; padding: 1rem; }
 
-/* Sekcja powitalna z tłem jako baner.jpg */
-.hero-card {
-  background: url('baner.jpg') no-repeat center center;
-  background-size: cover;
-  border-radius: 20px;
-  padding: 4rem 2rem;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 1.5rem;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
+/* Sekcja powitalna z tłem jako baner.jpg */ .hero-card { background: url('baner.jpg') no-repeat center center; background-size: cover; border-radius: 20px; padding: 4rem 2rem; text-align: center; color: #fff; margin-bottom: 1.5rem; position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
 
-.hero-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(255, 255, 255, 0.6);
-  z-index: 0;
-}
+.hero-card::before { content: ''; position: absolute; inset: 0; background-color: rgba(255, 255, 255, 0.6); z-index: 0; }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
+.hero-content { position: relative; z-index: 1; }
 
-.hero-content h1 {
-  font-size: 2.2rem;
-  margin: 0;
-  color: #5c1a12;
-}
+.hero-content h1 { font-size: 2.2rem; margin: 0; color: #5c1a12; }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-top: 0.4rem;
-  color: #0F3C5A;
-}
+.hero-content p { font-size: 1.2rem; margin-top: 0.4rem; color: #0F3C5A; }
 
-.card {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 16px;
-  padding: 1.2rem;
-  margin: 1.2rem 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  color: black;
-  text-align: center;
-}
+.card { background-color: rgba(255, 255, 255, 0.6); border-radius: 16px; padding: 1.2rem; margin: 1.2rem 0; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); color: black; text-align: center; }
 
-h2 {
-  font-size: 1.2rem;
-  color: #48140E;
-  font-weight: bold;
-  margin-bottom: 0.6rem;
-}
+h2 { font-size: 1.2rem; color: #48140E; font-weight: bold; margin-bottom: 0.6rem; }
 
-ul {
-  padding-left: 1.2rem;
-  margin: 0;
-}
+ul { padding-left: 1.2rem; margin: 0; }
 
-/* Kontakt – ikonki okrągłe i bez obramowania */
-.contact-icons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
+/* Kontakt – ikonki okrągłe i bez obramowania */ .contact-icons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
 
-.contact-icons img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
+.contact-icons img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; background-color: transparent; border: none; box-shadow: none; }
 
-/* Opinie */
-#opinie-list {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+/* Opinie */ #opinie-list { margin-bottom: 1rem; display: flex; flex-direction: column; gap: 1rem; }
 
-.opinion {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 1rem;
-  border-radius: 12px;
-  text-align: left;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  font-size: 0.95rem;
-  color: #333;
-}
+.opinion { background-color: rgba(255, 255, 255, 0.85); padding: 1.2rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07); font-size: 0.95rem; color: #333; line-height: 1.5; }
 
-.opinion strong {
-  color: #0F3C5A;
-}
+.opinion strong { color: #0F3C5A; }
 
-#opinie-form input,
-#opinie-form select,
-#opinie-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 0.95rem;
-}
+#opinie-form { text-align: center; }
 
-#opinie-form button {
-  background-color: #5c1a12;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  width: 100%;
-  transition: background-color 0.3s;
-  font-size: 1rem;
-}
+#opinie-form input, #opinie-form select, #opinie-form textarea { width: 90%; padding: 10px; margin: 8px 0; border-radius: 8px; border: 1px solid #bbb; font-size: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
 
-#opinie-form button:hover {
-  background-color: #0F3C5A;
-}
+#opinie-form button { width: 90%; background-color: #5c1a12; color: white; padding: 12px; font-size: 1rem; font-weight: bold; border-radius: 8px; border: none; cursor: pointer; transition: background 0.3s ease; margin-top: 10px; }
 
-/* Responsywność */
-@media screen and (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 1.6rem;
-  }
-  .hero-content p {
-    font-size: 1rem;
-  }
-}
+#opinie-form button:hover { background-color: #0F3C5A; }
+
+/* Responsywność */ @media screen and (max-width: 480px) { .hero-content h1 { font-size: 1.6rem; } .hero-content p { font-size: 1rem; } }
+
