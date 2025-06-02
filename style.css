@@ -102,6 +102,7 @@ ul {
 .contact-icons img[alt="Facebook"] {
   width: 90px;
   height: 90px;
+  transform: scale(1.15);
 }
 
 /* Zdjęcie Sandry – kontakt */
