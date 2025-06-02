@@ -55,8 +55,9 @@ body {
   color: #0F3C5A;
 }
 
+/* Poprawiona przezroczystość kart – lepszy kontrast */
 .card {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 16px;
   padding: 1.2rem;
   margin: 1.2rem 0;
