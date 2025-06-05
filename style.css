@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
-/* ===== SGK Cleaning Service – styl mobilny ===== */
-
 body {
   margin: 0;
   padding: 0;
@@ -18,59 +16,24 @@ body {
   padding: 1rem;
 }
 
-/* Sekcja powitalna z tłem jako baner.jpg */
-.hero-card {
-  background: url('baner.jpg') no-repeat center center;
-  background-size: cover;
-  border-radius: 20px;
-  padding: 4rem 2rem;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 1.5rem;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.hero-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(255, 255, 255, 0.6);
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-content h1 {
-  font-size: 2.2rem;
-  margin: 0;
-  color: #5c1a12;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-top: 0.4rem;
-  color: #0F3C5A;
-}
-
-/* Przywrócona przezroczystość kart */
+/* Karta główna */
 .card {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.65);
   border-radius: 16px;
   padding: 1.2rem;
-  margin: 1.2rem 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  color: black;
+  margin: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
 
-/* Gradient w tekstach usług + większa czcionka + pogrubienie */
+/* Ciemniejsza karta dla lepszej czytelności */
+.card-dark {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Teksty */
 .card p {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.1rem;
   background: linear-gradient(to right, #5c1a12, #0F3C5A);
   -webkit-background-clip: text;
@@ -78,18 +41,13 @@ body {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #48140E;
   font-weight: bold;
   margin-bottom: 0.6rem;
 }
 
-ul {
-  padding-left: 1.2rem;
-  margin: 0;
-}
-
-/* Kontakt – ikonki okrągłe i bez obramowania */
+/* Ikony kontaktowe */
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -98,26 +56,23 @@ ul {
   margin-top: 1rem;
 }
 
-.contact-icons img {
+.icon-fb {
+  width: 90px;
+}
+
+.icon-msg,
+.icon-wa {
   width: 80px;
-  height: 80px;
+}
+
+.contact-icons img {
+  height: auto;
   border-radius: 50%;
   object-fit: contain;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
   display: block;
 }
 
-.contact-icons img[alt="Facebook"] {
-  width: 90px;
-  height: 90px;
-  transform: scale(1.15);
-}
-
-/* Zdjęcie Sandry – kontakt */
+/* Zdjęcie Sandry */
 .kontakt-foto {
   display: block;
   margin: 0 auto 1rem auto;
@@ -129,7 +84,7 @@ ul {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Opinie – teraz jak karta */
+/* Opinie */
 #opinie-list {
   margin-bottom: 1rem;
   display: flex;
@@ -196,11 +151,11 @@ ul {
 
 /* Responsywność */
 @media screen and (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 1.6rem;
+  h2 {
+    font-size: 1.1rem;
   }
 
-  .hero-content p {
+  .card p {
     font-size: 1rem;
   }
 }
