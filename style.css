@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 /* ===== SGK Cleaning Service – styl mobilny ===== */
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: url('tlo.jpg') no-repeat center center fixed;
   background-size: cover;
   background-color: #f5f3ef;
@@ -66,9 +68,10 @@ body {
   text-align: center;
 }
 
-/* Gradient w tekstach usług */
+/* Gradient w tekstach usług + większa czcionka + pogrubienie */
 .card p {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.1rem;
   background: linear-gradient(to right, #5c1a12, #0F3C5A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
